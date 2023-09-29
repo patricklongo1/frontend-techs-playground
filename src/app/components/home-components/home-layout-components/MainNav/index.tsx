@@ -5,7 +5,7 @@ const MainNav: React.FC = () => {
   return (
     <S.Container>
       <S.SimpleButton href="/aboutUs">Quem Somos</S.SimpleButton>
-      <S.FilledButton href="/schedule">Agendar Consulta</S.FilledButton>
+      <S.FilledButton href="/schedule">Agendar</S.FilledButton>
     </S.Container>
   )
 }

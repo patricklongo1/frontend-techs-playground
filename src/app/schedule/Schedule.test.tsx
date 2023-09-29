@@ -10,7 +10,7 @@ import Schedule from './page'
 
 import dates from '../../../mocks/dates.json'
 import times from '../../../mocks/times.json'
-import pokemons from '../../../mocks/pokemons.json'
+import integrals from '../../../mocks/integrals.json'
 import regions from '../../../mocks/regions.json'
 import cities from '../../../mocks/cities.json'
 import city from '../../../mocks/city.json'
@@ -39,7 +39,7 @@ describe('Schedule', () => {
     ),
 
     rest.get('https://pokeapi.co/api/v2/pokemon', async (req, res, ctx) => {
-      return res(ctx.json(pokemons))
+      return res(ctx.json(integrals))
     }),
 
     rest.get('https://pokeapi.co/api/v2/region', async (req, res, ctx) => {
@@ -92,8 +92,8 @@ describe('Schedule', () => {
     )) as HTMLSelectElement
     await userEvent.selectOptions(selectCityElement, 'Canalave City')
 
-    fireEvent.click(screen.getByText('Adicionar novo pokémon ao time... +'))
-    fireEvent.change(screen.getByPlaceholderText('Selecione seu Pokémon'), {
+    fireEvent.click(screen.getByText('Add novo integrante ao atendimento +'))
+    fireEvent.change(screen.getByPlaceholderText('Selecione seu integrante'), {
       target: { value: 'bulbasaur' },
     })
 

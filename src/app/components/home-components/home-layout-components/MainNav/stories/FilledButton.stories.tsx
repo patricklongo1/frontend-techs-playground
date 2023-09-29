@@ -17,7 +17,7 @@ interface ButtonProps {
 }
 
 const Template: StoryFn<ButtonProps> = (args) => (
-  <FilledButton {...args}>Agendar Consulta</FilledButton>
+  <FilledButton {...args}>Agendar</FilledButton>
 )
 
 export const Default = Template.bind({})

@@ -3,24 +3,24 @@ import { render, screen } from '@testing-library/react'
 import Resume from './index'
 
 describe('Resume', () => {
-  it('should renders the number of Pokémon to be attended', () => {
+  it('should renders the number of integrante to be attended', () => {
     const teamTotal = 5
     render(<Resume teamTotal={teamTotal} tax={3} />)
 
-    const numberOfPokemons = screen.getByText(
-      'Número de pokémons a serem atendidos:',
+    const numberOfIntegrals = screen.getByText(
+      'Número de integrantes a serem atendidos:',
     )
-    const numberOfPokemonsValue = screen.getByText(`${teamTotal}`)
+    const numberOfIntegralsValue = screen.getByText(`${teamTotal}`)
 
-    expect(numberOfPokemons).toBeInTheDocument()
-    expect(numberOfPokemonsValue).toBeInTheDocument()
+    expect(numberOfIntegrals).toBeInTheDocument()
+    expect(numberOfIntegralsValue).toBeInTheDocument()
   })
 
-  it('should renders the unit cost per Pokémon', () => {
+  it('should renders the unit cost per integrante', () => {
     const teamTotal = 5
     render(<Resume teamTotal={teamTotal} tax={3} />)
 
-    const unitCost = screen.getByText('Atendimento unitário por pokémon:')
+    const unitCost = screen.getByText('Atendimento unitário por integrante:')
     const unitCostValue = screen.getByText('R$ 70,00')
 
     expect(unitCost).toBeInTheDocument()

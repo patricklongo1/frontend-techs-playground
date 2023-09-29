@@ -18,7 +18,7 @@ export default function handler(
     title: 'O Techs Playground',
     topics: [
       {
-        title: 'Como funciona a cura de um pokémon?',
+        title: 'Como funciona a cura de um integrante?',
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         vel mi ut nunc sodales mattis eget at sem. Praesent mattis interdum
         nulla, quis molestie justo lacinia a. Curabitur rutrum ante a ligula
@@ -52,7 +52,7 @@ export default function handler(
         dapibus nec at enim.`,
       },
       {
-        title: 'O melhor para seu pokémon',
+        title: 'O melhor para seu integrante',
         content: `Quisque porta cursus metus, id posuere mi commodo ac. Proin auctor
         nisl eu mattis dignissim. Nullam efficitur, eros a sollicitudin
         dignissim, nunc risus sollicitudin nunc, vitae lacinia erat mi sed

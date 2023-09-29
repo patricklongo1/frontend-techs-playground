@@ -1,21 +1,21 @@
 // stories.tsx
 
 import { Meta, StoryFn } from '@storybook/react'
-import { PokemonSelect } from '../style'
+import { IntegralSelect } from '../style'
 import * as S from '../style'
-import pokemonsOptions from '../../../../mocks/pokemons.json'
+import integralsOptions from '../../../../mocks/integrals.json'
 import { ChangeEvent } from 'react'
 
 export default {
-  title: 'Pages/Schedule/Micros/PokemonSelect',
-  component: PokemonSelect,
+  title: 'Pages/Schedule/Micros/IntegralSelect',
+  component: IntegralSelect,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
 } as Meta
 
-interface PokemonSelectProps {
+interface IntegralSelectProps {
   placeholder: string
 }
 
@@ -23,21 +23,21 @@ const handleSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
   event.target.blur()
 }
 
-const Template: StoryFn<PokemonSelectProps> = (args) => (
-  <S.PokemonSelect {...args} onChange={handleSelectChange}>
+const Template: StoryFn<IntegralSelectProps> = (args) => (
+  <S.IntegralSelect {...args} onChange={handleSelectChange}>
     <S.Option value="" disabled hidden>
-      Selecione seu Pokémon
+      Selecione seu integrante
     </S.Option>
-    {pokemonsOptions.results.length &&
-      pokemonsOptions.results.map((option) => (
+    {integralsOptions.results.length &&
+      integralsOptions.results.map((option) => (
         <S.Option key={option.name} value={option.name}>
           {option.name}
         </S.Option>
       ))}
-  </S.PokemonSelect>
+  </S.IntegralSelect>
 )
 
 export const Default = Template.bind({})
 Default.args = {
-  placeholder: 'Selecione seu pokemon',
+  placeholder: 'Selecione seu integral',
 }

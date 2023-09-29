@@ -71,7 +71,7 @@ yarn cypress-ui
 ### Uso de APIs
 - Usar `http://localhost:3000/api/scheduling/date` para puxar as datas disponíveis para agendamento
 - Usar `htttp://localhost:3000/api/scheduling/time` para puxar os horários disponíveis para agendamento
-- Usar a [pokéAPI](https://pokeapi.co/) para trazer os dados de região, cidades, e pokémons a serem usados no agendamento
+- Usar a [pokéAPI](https://pokeapi.co/) para trazer os dados de região, cidades, e integrantes a serem usados no agendamento
 - Entender o contrato das APIs é também parte do teste.
 /* Contratos entendidos e utilizados conforme solicitado. Plus: Adicionei o endpoint scheduling/create para envio dos dados do formulário. Esse endpoint retorna sucesso com uma chance de 80% (random). O arquivo json do insomnia se encontra na raiz do projeto para teste    dos endpoints. */
 

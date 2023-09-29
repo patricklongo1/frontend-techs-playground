@@ -48,7 +48,7 @@ export const InputContainer = styled.main`
   flex-direction: column;
 `
 
-export const PokemonListContainer = styled.div`
+export const IntegralListContainer = styled.div`
   margin-top: 1rem;
   width: 100%;
   display: flex;
@@ -56,17 +56,17 @@ export const PokemonListContainer = styled.div`
   justify-content: space-between;
 `
 
-export const PokemonListContent = styled.div`
+export const IntegralListContent = styled.div`
   margin-left: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
 `
 
-interface PokemonSelectProps {
+interface IntegralSelectProps {
   placeholder: string
 }
-export const PokemonSelect = styled.select<PokemonSelectProps>`
+export const IntegralSelect = styled.select<IntegralSelectProps>`
   width: 100%;
   align-self: flex-end;
   border: 0.0625rem solid #d5d5d5;
@@ -94,7 +94,7 @@ export const PokemonSelect = styled.select<PokemonSelectProps>`
   }
 `
 
-export const PokemonAddButton = styled.button`
+export const IntegralAddButton = styled.button`
   border: 0.0625rem solid #1d1d1d;
   width: 17.5rem;
   height: 2.625rem;
@@ -192,14 +192,14 @@ export const SubmitButton = styled.button<SubmitButtonProps>`
   font-weight: 700;
   font-size: 0.875rem;
   color: #fff;
-  background-color: #e40f0f;
+  background-color: #444;
   border-radius: 1.875rem;
   align-self: flex-end;
   margin: 1rem 0rem;
 
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #c20808;
+    background-color: #aaa;
   }
 
   ${(props) =>
@@ -219,7 +219,7 @@ export const ErrorMessage = styled.span`
   margin-top: 0.125rem;
   font-weight: 400;
   font-size: 0.75rem;
-  color: #e40f0f;
+  color: #444;
 `
 
 export const Divider = styled.div`

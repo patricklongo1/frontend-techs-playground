@@ -99,19 +99,19 @@ const createScheduleSchema = z.object({
         })
         .join(' ')
     }),
-  pokemons: z
+  integrals: z
     .array(
       z.object({
-        name: z.string().nonempty('Selecione um Pokémon'),
+        name: z.string().nonempty('Selecione um integrante'),
       }),
     )
-    .max(6, 'Insira no máximo 06 Pokémons')
-    .min(1, 'Insira no mínimo 01 Pokémon'),
+    .max(6, 'Insira no máximo 06 integrantes')
+    .min(1, 'Insira no mínimo 01 integrante'),
 })
 
 type createScheduleFormData = z.infer<typeof createScheduleSchema>
 
-interface PokemonOption {
+interface IntegralOption {
   name: string
 }
 
@@ -125,7 +125,7 @@ interface CityOption {
 }
 
 const Schedule: React.FC = () => {
-  const crumbs = [{ label: 'Home', path: '/' }, { label: 'Agendar Consulta' }]
+  const crumbs = [{ label: 'Home', path: '/' }, { label: 'Agendar' }]
   const {
     register,
     handleSubmit,
@@ -137,7 +137,7 @@ const Schedule: React.FC = () => {
   })
   const { fields, append } = useFieldArray({
     control,
-    name: 'pokemons',
+    name: 'integrals',
   })
   const [selectedDate, setSelectedDate] = useState('')
   const [timesOptions, setTimesOptions] = useState([])
@@ -152,8 +152,8 @@ const Schedule: React.FC = () => {
     },
   )
 
-  const { data: pokemonsOptions = [] } = useQuery<PokemonOption[]>(
-    'pokemonList',
+  const { data: integralsOptions = [] } = useQuery<IntegralOption[]>(
+    'integralList',
     async () => {
       const response = await pokeApi.get('/pokemon?limit=100000&offset=0')
       return response.data.results
@@ -235,7 +235,7 @@ const Schedule: React.FC = () => {
     }
   }
 
-  function addNewPokemon() {
+  function addNewIntegral() {
     append({ name: '' })
   }
 
@@ -260,13 +260,11 @@ const Schedule: React.FC = () => {
       )}
       <InfoBar
         crumbs={crumbs}
-        title="Agendar Consulta"
-        description="Recupere seus pokémons em 5 segundos"
+        title="Agendar"
+        description="Recupere seus integrantes em 5 segundos"
       />
       <S.Content>
-        <S.Title>
-          Preencha o formulário abaixo para agendar sua consulta
-        </S.Title>
+        <S.Title>Preencha o formulário abaixo para agendar.</S.Title>
 
         <S.Form onSubmit={handleSubmit(handleSchedule)}>
           <S.DoubleInputContainer>
@@ -356,49 +354,49 @@ const Schedule: React.FC = () => {
           </S.DoubleInputContainer>
 
           <S.SimpleSpan>Cadastre seu time</S.SimpleSpan>
-          <S.SimpleSmall>Atendemos até 06 pokémons por vez</S.SimpleSmall>
-          {errors.pokemons && (
-            <S.ErrorMessage>{errors.pokemons.message}</S.ErrorMessage>
+          <S.SimpleSmall>Atendemos até 06 integrantes por vez</S.SimpleSmall>
+          {errors.integrals && (
+            <S.ErrorMessage>{errors.integrals.message}</S.ErrorMessage>
           )}
           {fields.map((field, index) => (
             <S.DoubleInputContainer key={field.id}>
-              <S.PokemonListContainer>
-                <S.SimpleSpan>{`Pokémon 0${index + 1}`}</S.SimpleSpan>
-                <S.PokemonListContent>
-                  <S.PokemonSelect
-                    id="pokemons"
-                    placeholder="Selecione seu Pokémon"
-                    {...register(`pokemons.${index}.name`)}
+              <S.IntegralListContainer>
+                <S.SimpleSpan>{`integrante 0${index + 1}`}</S.SimpleSpan>
+                <S.IntegralListContent>
+                  <S.IntegralSelect
+                    id="integrals"
+                    placeholder="Selecione seu integrante"
+                    {...register(`integrals.${index}.name`)}
                     onChange={handleSelectChange}
                   >
                     <S.Option value="" disabled hidden>
-                      Selecione seu Pokémon
+                      Selecione seu integrante
                     </S.Option>
-                    {pokemonsOptions.length &&
-                      pokemonsOptions.map((option) => (
+                    {integralsOptions.length &&
+                      integralsOptions.map((option) => (
                         <S.Option key={option.name} value={option.name}>
                           {option.name}
                         </S.Option>
                       ))}
-                  </S.PokemonSelect>
+                  </S.IntegralSelect>
 
-                  {errors.pokemons?.[index]?.name && (
+                  {errors.integrals?.[index]?.name && (
                     <S.ErrorMessage>
-                      {errors.pokemons?.[index]?.name?.message}
+                      {errors.integrals?.[index]?.name?.message}
                     </S.ErrorMessage>
                   )}
-                </S.PokemonListContent>
-              </S.PokemonListContainer>
+                </S.IntegralListContent>
+              </S.IntegralListContainer>
             </S.DoubleInputContainer>
           ))}
 
-          <S.PokemonAddButton
+          <S.IntegralAddButton
             type="button"
-            onClick={addNewPokemon}
-            disabled={pokemonsOptions.length <= 0}
+            onClick={addNewIntegral}
+            disabled={integralsOptions.length <= 0}
           >
-            Adicionar novo pokémon ao time... +
-          </S.PokemonAddButton>
+            Add novo integrante ao atendimento +
+          </S.IntegralAddButton>
 
           <S.DoubleInputContainer>
             <S.InputContainer>

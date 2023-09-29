@@ -18,7 +18,7 @@ const ScheduleStatus: React.FC<ScheduleStatusProps> = ({
       <S.Content>
         <S.Title>
           {status === 201
-            ? 'Consulta Agendada'
+            ? 'Agendamento Realizado'
             : 'Houve um problema no agendamento'}
         </S.Title>
         <S.Icon src={status === 201 ? check : warning} alt="icon" />

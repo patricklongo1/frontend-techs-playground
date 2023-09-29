@@ -27,7 +27,7 @@ export const Error = Template.bind({})
 Success.args = {
   status: 201,
   message:
-    'Seu agendamento para dia xx/xx/xxxx, às xx:xx:xx, para x pokémons foi realizado com sucesso!',
+    'Seu agendamento para dia xx/xx/xxxx, às xx:xx:xx, para x integrante(s) foi realizado com sucesso!',
   handleClose: () => {
     console.log('handleClose')
   },

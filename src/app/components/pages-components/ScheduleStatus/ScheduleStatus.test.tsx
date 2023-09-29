@@ -12,7 +12,7 @@ describe('ScheduleStatus', () => {
   it('should renders success status correctly', () => {
     render(<ScheduleStatus {...sampleProps} />)
 
-    const title = screen.getByText('Consulta Agendada')
+    const title = screen.getByText('Agendamento Realizado')
     const icon = screen.getByAltText('icon')
     const message = screen.getByText(sampleProps.message)
     const button = screen.getByText('Fazer Novo Agendamento')

@@ -15,7 +15,7 @@ export const Container = styled(Link)<ContainerProps>`
 
   height: 3.8125rem;
   border-radius: 3.125rem;
-  background-color: #e40f0f;
+  background-color: #444;
   padding-left: 1rem;
   padding-right: 1rem;
 

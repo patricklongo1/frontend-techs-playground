@@ -33,7 +33,7 @@ const AboutUs: React.FC = () => {
       <InfoBar
         crumbs={crumbs}
         title="Quem Somos"
-        description="A maior rede de tratamento pokémon."
+        description="A maior rede de tratamento integrante."
       />
       <S.Content>
         {isLoading ? (

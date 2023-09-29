@@ -43,7 +43,7 @@ export const Message = styled.p`
 export const Button = styled.button`
   width: 17rem;
   height: 2.625rem;
-  background-color: #e40f0f;
+  background-color: #444;
   border-radius: 1.875rem;
 
   font-size: 0.875rem;
@@ -57,6 +57,6 @@ export const Button = styled.button`
 
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #c20808; /* Altere a cor desejada no hover */
+    background-color: #aaa; /* Altere a cor desejada no hover */
   }
 `

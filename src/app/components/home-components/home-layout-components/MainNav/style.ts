@@ -50,7 +50,7 @@ export const FilledButton = styled(Link)<FilledButtonProps>`
   text-decoration: none;
   width: 10.75rem;
   height: 2.625rem;
-  background-color: #e40f0f;
+  background-color: #444;
   border-radius: 1.875rem;
 
   font-size: 0.875rem;
@@ -64,6 +64,6 @@ export const FilledButton = styled(Link)<FilledButtonProps>`
 
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #c20808;
+    background-color: #aaa;
   }
 `

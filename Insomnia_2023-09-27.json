@@ -1,1 +1,252 @@
-{"_type":"export","__export_format":4,"__export_date":"2023-09-27T03:09:00.067Z","__export_source":"insomnia.desktop.app:v2023.5.8","resources":[{"_id":"req_beb12bf435ac44d49d9f7b39d3ff77aa","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695774482701,"created":1695774445889,"url":"http://localhost:3000/api/about-us","name":"about-us","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/2023.5.8"}],"authentication":{},"metaSortKey":-1695774445889,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_7ee93d75e0634adbaf86d91a03ddca30","parentId":null,"modified":1695514661533,"created":1695514661533,"name":"Petz-test-front","description":"","scope":"collection","_type":"workspace"},{"_id":"req_79c8160a38e24a2997dabe0afb73b210","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695696696974,"created":1695696690133,"url":"https://pokeapi.co/api/v2/location/1/","name":"city","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/2023.5.8"}],"authentication":{},"metaSortKey":-1695696690133,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_4a89f8279f7e4b859afa5f6e7d133a32","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695696352513,"created":1695696343239,"url":"https://pokeapi.co/api/v2/location","name":"locations","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/2023.5.8"}],"authentication":{},"metaSortKey":-1695696343239,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_88cbdeb3900840f3a51539656afdcd58","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695689646254,"created":1695689635732,"url":"https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0","name":"pokemons","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/2023.5.8"}],"authentication":{},"metaSortKey":-1695689635732,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_dd79a9e894a54fb6b154160d0ac886f5","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695671234673,"created":1695671205848,"url":"https://pokeapi.co/api/v2/region/","name":"regions","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/2023.5.8"}],"authentication":{},"metaSortKey":-1695671205848,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_aa27be8b0e1c4d5b8b5108f535d96726","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695515841133,"created":1695514698484,"url":"http://localhost:3000/api/scheduling/time","name":"horarios","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"date\": \"23/09/2023\"\n}"},"parameters":[],"headers":[{"id":"pair_5307c2f8557345db93f465ab3b708716","name":"content-type","value":"application/json","description":""},{"id":"pair_1c185d5d562442a192226820ed8830f9","name":"","value":"","description":""}],"authentication":{},"metaSortKey":-1695514698484,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_99979b56c79d4d908c39a7b5a55e8b66","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695689631614,"created":1695514670330,"url":"http://localhost:3000/api/scheduling/date","name":"datas","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1695514670330,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_600a6cc3fbfb7adf6dba5606c36ddbc758cb0375","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695514661541,"created":1695514661541,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1695514661541,"_type":"environment"},{"_id":"jar_600a6cc3fbfb7adf6dba5606c36ddbc758cb0375","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695514661546,"created":1695514661546,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_314ad279ca6b4f8bb63c6d7230e3e22a","parentId":"wrk_7ee93d75e0634adbaf86d91a03ddca30","modified":1695514661533,"created":1695514661533,"fileName":"Petz-test-front","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-09-27T03:09:00.067Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_beb12bf435ac44d49d9f7b39d3ff77aa",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695774482701,
+      "created": 1695774445889,
+      "url": "http://localhost:3000/api/about-us",
+      "name": "about-us",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1695774445889,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "parentId": null,
+      "modified": 1695514661533,
+      "created": 1695514661533,
+      "name": "Petz-test-front",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_79c8160a38e24a2997dabe0afb73b210",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695696696974,
+      "created": 1695696690133,
+      "url": "https://pokeapi.co/api/v2/location/1/",
+      "name": "city",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1695696690133,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4a89f8279f7e4b859afa5f6e7d133a32",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695696352513,
+      "created": 1695696343239,
+      "url": "https://pokeapi.co/api/v2/location",
+      "name": "locations",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1695696343239,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_88cbdeb3900840f3a51539656afdcd58",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695689646254,
+      "created": 1695689635732,
+      "url": "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0",
+      "name": "integrals",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1695689635732,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_dd79a9e894a54fb6b154160d0ac886f5",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695671234673,
+      "created": 1695671205848,
+      "url": "https://pokeapi.co/api/v2/region/",
+      "name": "regions",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1695671205848,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_aa27be8b0e1c4d5b8b5108f535d96726",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695515841133,
+      "created": 1695514698484,
+      "url": "http://localhost:3000/api/scheduling/time",
+      "name": "horarios",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"date\": \"23/09/2023\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_5307c2f8557345db93f465ab3b708716",
+          "name": "content-type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "id": "pair_1c185d5d562442a192226820ed8830f9",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1695514698484,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_99979b56c79d4d908c39a7b5a55e8b66",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695689631614,
+      "created": 1695514670330,
+      "url": "http://localhost:3000/api/scheduling/date",
+      "name": "datas",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1695514670330,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_600a6cc3fbfb7adf6dba5606c36ddbc758cb0375",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695514661541,
+      "created": 1695514661541,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1695514661541,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_600a6cc3fbfb7adf6dba5606c36ddbc758cb0375",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695514661546,
+      "created": 1695514661546,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_314ad279ca6b4f8bb63c6d7230e3e22a",
+      "parentId": "wrk_7ee93d75e0634adbaf86d91a03ddca30",
+      "modified": 1695514661533,
+      "created": 1695514661533,
+      "fileName": "Petz-test-front",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}

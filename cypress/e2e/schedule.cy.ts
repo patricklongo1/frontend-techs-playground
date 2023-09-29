@@ -12,8 +12,8 @@ describe('should send form with valid data', () => {
     cy.get('#region').select('kanto')
     cy.get('#city').select('Canalave City')
 
-    cy.contains('Adicionar novo pokémon ao time... +').click()
-    cy.get('select[name^="pokemons"]').select('bulbasaur')
+    cy.contains('Add novo integrante ao atendimento +').click()
+    cy.get('select[name^="integrals"]').select('bulbasaur')
 
     cy.get('#date').select(new Date().toLocaleDateString())
     cy.get('#time').select('10:00:00')

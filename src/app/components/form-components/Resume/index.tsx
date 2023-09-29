@@ -20,12 +20,12 @@ const Resume: React.FC<ResumeProps> = ({ teamTotal, tax }) => {
   return (
     <S.Content>
       <S.LineBox>
-        <S.Text>Número de pokémons a serem atendidos:</S.Text>
+        <S.Text>Número de integrantes a serem atendidos:</S.Text>
         <S.Text>{teamTotal}</S.Text>
       </S.LineBox>
 
       <S.LineBox>
-        <S.Text>Atendimento unitário por pokémon:</S.Text>
+        <S.Text>Atendimento unitário por integrante:</S.Text>
         <S.Text>{formatCurrency(70)}</S.Text>
       </S.LineBox>
 

@@ -6,7 +6,7 @@ describe('MainNav', () => {
   it('should render without errors', () => {
     render(<MainNav />)
     const simpleButton = screen.getByText('Quem Somos')
-    const filledButton = screen.getByText('Agendar Consulta')
+    const filledButton = screen.getByText('Agendar')
 
     expect(simpleButton).toBeInTheDocument()
     expect(filledButton).toBeInTheDocument()
@@ -15,7 +15,7 @@ describe('MainNav', () => {
   it('should have correct link hrefs', () => {
     render(<MainNav />)
     const simpleButton = screen.getByText('Quem Somos')
-    const filledButton = screen.getByText('Agendar Consulta')
+    const filledButton = screen.getByText('Agendar')
 
     expect(simpleButton).toHaveAttribute('href', '/aboutUs')
     expect(filledButton).toHaveAttribute('href', '/schedule')
